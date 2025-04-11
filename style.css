@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: #475B63;
+    text-align: center;
+}
+.container {
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game {
+    height: 60vmin;
+    width: 60vmin;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2vmin;
+}
+.box {
+    height: 18vmin;
+    width: 18vmin;
+    border-radius: 12px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    font-family: monospace;
+    font-size: 5rem;
+    color: #03045e;
+    background-color: #fffeff;
+}
+@media (max-width: 550px) {
+    .box {
+        font-size: 3rem;
+    }
+}
+.reset-btn {
+    padding: 1rem 2.5rem;
+    font-size: 1.5rem;
+    border-radius: 0.8rem;
+    font-family: monospace;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border: none;
+
+}
+
+/* --------------for msg container---------------- */
+
+.msg-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0f4f8;
+    border: 2px solid #ccc;
+    border-radius: 16px;
+    padding: 20px;
+    width: 400px;
+    margin: auto;
+    margin-top: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.hide {
+    display: none;
+}
+
+.msg {
+    font-size: 24px;
+    font-weight: bold;
+    color: #2d6a4f;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+#new-game {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #40916c;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#new-game:hover {
+    background-color: #2d6a4f;
+}
+
+@media (max-width: 500px) {
+    .msg-container {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .msg {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    #new-game {
+        width: 100%;
+        font-size: 14px;
+        padding: 10px;
+    }
+}
